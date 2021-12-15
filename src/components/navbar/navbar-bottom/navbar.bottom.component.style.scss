@@ -1,16 +1,25 @@
+// colors
+$nav-bg-color: #2978a0;
+$nav-font-color: aliceblue;
+
+// mixins
+@mixin flex-spacebt-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .bottom-nav-holder{
     width: 100%;
-    background-color: #2978a0;
-    color: aliceblue;
+    background-color: $nav-bg-color;
+    color: $nav-font-color;
 }
 
 .bottom-nav-container{
     width: 1500px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-size: 1.05em;
+    @include flex-spacebt-center;
     
     @media only screen and (max-width: 1600px){
         width: 1200px;
