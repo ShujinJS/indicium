@@ -1,0 +1,132 @@
+main{
+    width: 100%;
+
+    @media only screen and (max-width: 1600px){
+        font-size: 12px;
+    }
+
+    @media only screen and (max-width: 1500px){
+        font-size: 10px;
+    }
+
+    transition: all 0.5s linear;
+
+
+}
+
+.cover{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+
+    .landing-bg{
+        width: 100%;
+        height: 100%;
+        background-image: url("https://realxchange.communitylivingessex.org/wp-content/uploads/2020/04/Human-Resources.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+
+
+
+        .cover-header{
+            height: 90px;
+            position: relative;
+            top: 300px;
+            right: 100px;
+            color: #f3f3f3;
+            font-size: 2em;
+            font-weight: 300;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(85, 84, 84, 0.719);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+            @media only screen and (max-width: 1300px){
+                display: none;
+            }
+
+        }
+    }
+}
+
+.area{
+    width: 100%;
+    height: 252px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+        .place-filler{
+            width: 30%;
+            font-size: 1.5em;
+            position: relative;
+            right: 100px;
+            text-align: end;
+            color: gray;
+
+            @media only screen and (max-width: 1300px){
+                font-size: 1.7em;
+                top: 10%;
+                right: 33%;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 900px){
+                font-size: 1.5em;
+            }
+        
+            @media only screen and (max-width: 700px){
+                font-size: 1.1em;
+            }
+        }
+}
+
+.link-container{
+    width: 25em;
+    height: 20em;
+    position: absolute;
+    top: 450px;
+    left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #06bcc1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    @media only screen and (max-width: 1300px){
+        width: 52em;
+    }
+
+    @media only screen and (max-width: 1000px){
+        left: 25%;
+    }
+
+    @media only screen and (max-width: 900px){
+        width: 45em;
+    }
+
+    @media only screen and (max-width: 700px){
+        width: 60%;
+        left: 23%;
+    }
+    
+
+    .link-item{
+        padding: 20px;
+        transition: all 0.5s linear;
+
+        &:hover{
+            background-color: #04979c;
+
+        }
+
+        .link{
+            font-size: 24px;
+            color: #f3f3f3;
+            font-weight: 600;
+        }
+    }
+}
+
